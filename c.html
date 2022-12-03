@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+    <script async="" src="//cdn.confiant-integrations.net/prebid/202211281516/wrap.js"></script>
+    <script type="text/javascript" async="" src="https://script.4dex.io/localstore.js"></script>
+    <title>C Tutorial</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" content="HTML, Python, CSS, SQL, JavaScript, How to, PHP, Java, C, C++, C#, jQuery, Bootstrap, Colors, W3.CSS, XML, MySQL, Icons, NodeJS, React, Graphics, Angular, R, AI, Git, Data Science, Code Game, Tutorials, Programming, Web Development, Training, Learning, Quiz, Exercises, Courses, Lessons, References, Examples, Learn to code, Source code, Demos, Tips, Website">
+    <meta name="Description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.">
+
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #28f06b;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #1a7991;
+}
+.main1{
+    margin-left:150px;
+    background-color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+}
+.main {
+  margin-left: 150px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 5px;
+}
+.h1{
+    color:#f02828;
+}
+.Head{
+    color:rgb(241, 241, 247);
+    font-family:"Roboto";
+    font-size:30px;
+    text-align:center;
+}
+.para{
+    font-size:20px;
+    font-family:"Serif";
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-size: 32px;
+}
+.ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.w3-example {
+    padding: 8px 20px;
+    margin: 24px -20px;
+    box-shadow: none!important;
+}
+.compiler{
+    background-color: aliceblue;
+}
+@media screen and (max-height: 500px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 15px;}
+}
+</style>
+</head>
+<body>
+
+<div class="sidenav ">
+  <h1 class="h1">C Tutorials</h1>
+  <a href="#Cintro"  >C Intro</a>
+  <a href="#CSyntax">C Syntax</a>
+  <a href="#COutput">C Output</a>
+  <a href="#CComments">C Comments</a>
+  <a href="#CVariables">C variables</a>
+  <a href="#CDatatypes">C Data Types</a>
+  <a href="#CConstants">C constants</a>
+  <a href="#COperators">C operators</a>
+  <a href="#CLoops"> C Loops</a>
+  <a href="#CArray">C Array</a>
+  <a href="#CStrings">C strings</a>
+  <a href="#CFunctions">C Functions</a>
+  <a href="#CStructures">C structures</a>
+  <a href="#Cexamples">C Examples</a>
+</div>
+
+
+<div class="main1">
+<div id="Cintro">
+    <div class="main">
+        <h1 class="Head">Introduction to C</h1>
+        <p class="para">What is C?
+            C is a general-purpose programming language created by Dennis Ritchie at the Bell Laboratories in 1972.
+            
+            It is a very popular language, despite being old.
+            
+            C is strongly associated with UNIX, as it was developed to write the UNIX operating system.
+            
+        </p>
+        <h2 class="h2">Why Learn C?</h2>
+        <ul class="ul para">
+            <li>It is one of the most popular programming language in the world</li>
+              <li>If you know C, you will have no problem learning other popular programming languages such as Java, Python, C++, C#, etc, as the syntax is similar</li>
+              <!--<li>If you know C, you will understand how computer memory works</li>-->
+              <li>C is very fast, compared to other programming languages, like <a href="/java/default.asp">Java</a> and <a href="/python/default.asp">Python</a></li>
+              <li>C is very versatile; it can be used in both applications and technologies</li>
+            </ul>
+            <h2 class="h2">Difference between C and C++</h2>
+            <ul class="ul para">
+                <li><a href="/cpp/default.asp">C++</a> was developed as an extension of C, and both languages have almost the same syntax</li>
+                <li>The main difference between C and C++ is that C++ support classes and objects, while C does not</li>
+            </ul>
+            <div class="w3-example" onclick>
+                <h4>myfirstprogram.c</h4>
+                <div class="compiler">
+                <div class="w3-code notranslate javaHigh"><span class="javacolor" style="color:rgb(15, 15, 15)"><span class="javanumbercolor" style="color:rgb(10, 10, 10)">
+                </span>  #include &lt;stdio.<span class="javapropertycolor" style="color:rgb(24, 23, 23)">h</span>&gt;<br><br><span class="javakeywordcolor" style="color:mediumblue">int</span> main() {<br>&nbsp; printf(<span class="javastringcolor" style="color:brown">"Hello World!"</span>);<br>&nbsp; <span class="javanumbercolor" style="color:red">
+                </span>  <span class="javakeywordcolor" style="color:mediumblue">return</span> <span class="javanumbercolor" style="color:red">0</span>;<br>} </span></div>
+                </div>
+            </div>
+                <h2 class="h2">Learning C At Code Gleam</h2>
+                <a href="https://youtu.be/EjavYOFoJJ0">Video</a>
+                   
+
+
+    </div>
+ </div>
+ <div id="CSyntax">
+    <div >
+       <div class="main">
+           <h1 class="Head ">Syntax in C</h1>
+           <p class="para">Every C statement ends with a semicolon ;
+   <br>
+               Note: The body of int main() could also been written as:
+               int main()<br>
+               {
+                   <br>
+                   printf("Hello World!");<br>
+               return 0;<br>
+           }</br>
+            </br>
+            </br>
+               
+               Remember: The compiler ignores white spaces</p>
+               
+
+            <div class="para">
+               Line 1: #include <stdio.h> is a header file library that lets us work with input and output functions, such as printf() (used in line 4). Header files add functionality to C programs.</br>
+
+                Don't worry if you don't understand how  #include <stdio.h> works. Just think of it as something that (almost) always appears in your program.
+                
+                Line 2: A blank line. C ignores white space. But we use it to make the code more readable.</br>
+                
+                Line 3: Another thing that always appear in a C program, is main(). This is called a function. Any code inside its curly brackets {} will be executed.</br>
+                
+                Line 4: printf() is a function used to output/print text to the screen. In our example it will output "Hello World".</br>
+                
+                Note that: Every C statement ends with a semicolon ;</br>
+                
+                Note: The body of int main() could also been written as:</br>
+                int main(){</br>printf("Hello World!");</br>return 0;</br>}
+                
+                Remember: The compiler ignores white spaces. However, multiple lines makes the code more readable.</br>
+                
+                Line 5: return 0 ends the main() function.</br>
+                
+                Line 6: Do not forget to add the closing curly bracket } to actually end the main function.
+            </div>
+       </div>
+    </div>
+    </div>
+
+ <div id="COutput">
+    <div class="main">
+        <p class="para">You can use as many printf() functions as you want. 
+            <br>
+            However, note that it does not insert a new line at the end of the output:
+            <br>
+        </p>
+        <h4>What is <code class="w3-codespan">\n</code> exactly?</h4>
+    </div>
+ </div>
+
+ <div id="CComments">
+    <div class="main">
+        <h1 class="Head">Comments</h1>
+        <h3>Comments in C</h3>
+        <p class="para">Comments can be used to explain code, and to make it more readable. It can also be used to prevent execution when testing alternative code.
+
+            Comments can be singled-lined or multi-lined.</p>
+        <h1 class="">Single-line Comments</h1>
+        <p class="para"> Single-line Comments<br>
+            Single-line comments start with two forward slashes (//).<br>
+            <br>
+            Any text between // and the end of the line is ignored by the compiler (will not be executed).
+            <br>
+            This example uses a single-line comment before a line of code:
+            <br>
+            </p>
+    </div>
+ </div>
+
+ <div id="CDatatypes">
+    <div class="main">
+        <h1 class="Head">C Data Types</h1>
+        <h3>Basic Data Types</h3>
+<p class="para">        
+The data type specifies the size and type of information the variable will store.<br/>
+<br/>
+In this tutorial, we will focus on the most basic ones:<br/>
+<br/>
+Data Type<hr/>Size       <hr/>Description<br/>
+int     <hr/>2 or 4 bytes<hr/>Stores whole numbers, without decimals
+float   <hr/>4 bytes	 <hr/>Stores fractional numbers, containing one or more decimals. Sufficient for storing 7 decimal digits
+double  <hr/>8 bytes	 <hr/>Stores fractional numbers, containing one or more decimals. Sufficient for storing 15 decimal digits
+char    <hr/>1 byte	     <hr/>Stores a single character/letter/number, or ASCII values
+</p>
+<h3>SPECIFIER	USED FOR</h3>
+<pre class="para">%ca single character
+%s	a string
+%hi	short (signed)
+%hu	short (unsigned)
+%Lf	long double
+%n	prints nothing
+%d	a decimal integer (assumes base 10)
+%i	a decimal integer (detects the base automatically)
+%o	an octal (base 8) integer
+%x	a hexadecimal (base 16) integer
+%p	an address (or pointer)
+%f	a floating point number for floats
+%u	int unsigned decimal
+%e	a floating point number in scientific notation
+%E	a floating point number in scientific notation
+%%	the % symbol
+</pre>
+    </div>
+ </div>
+
+ <div id="CVariables">
+    <div class="main">
+        <h1 class="Head">C variables</h1>
+        <h3>Declaring (Creating) Variables</h3>
+        <pre class="para">
+            
+To create a variable, specify the type and assign it a value:
+
+Syntax
+type variableName = value;
+Where type is one of C types (such as int), and variableName is the name of the variable (such as x or myName). The equal sign is used to assign a value to the variable.
+
+So, to create a variable that should store a number, look at the following example:
+
+Example
+Create a variable called myNum of type int and assign the value 15 to it:
+
+int myNum = 15;
+You can also declare a variable without assigning the value, and assign the value later:
+
+Example
+int myNum;
+myNum = 15;
+Note: If you assign a new value to an existing variable, it will overwrite the previous value:
+
+Example
+int myNum = 15;  // myNum is 15
+myNum = 10;  // Now myNum is 10
+Output Variables
+You learned from the output chapter that you can output values/print text with the printf() function:
+
+Example
+printf("Hello World!");
+In many other programming languages (like Python, Java, and C++), you would normally use a print function to display the value of a variable. However, this is not possible in C:
+        </pre>
+        
+            
+    </div>
+ </div>
+
+ <div id="CConstants">
+    <div class="main">
+        <h1 class="Head">C Constants</h1>
+        <h3>Constants</h3>
+        <pre class="para">
+            When you don't want others (or yourself) to override existing variable values, use the const keyword (this will declare the variable as "constant", which means unchangeable and read-only):
+
+Example
+const int myNum = 15;  // myNum will always be 15
+myNum = 10;  // error: assignment of read-only variable 'myNum'
+You should always declare the variable as constant when you have values that are unlikely to change:
+
+Example
+const int minutesPerHour = 60;
+const float PI = 3.14;
+Notes On Constants
+When you declare a constant variable, it must be assigned with a value:
+
+Example
+Like this:
+
+const int minutesPerHour = 60;
+This however, will not work:
+
+const int minutesPerHour;
+minutesPerHour = 60; // error
+Good Practice
+Another thing about constant variables, is that it is considered good practice to declare them with uppercase. It is not required, but useful for code readability and common for C programmers:
+
+Example
+const int BIRTHYEAR = 1980;
+        </pre>
+    </div>
+ </div>
+
+ <div id="COperators">
+    <div class="main">
+        <h1 class="Head">C Operators</h1>
+        <h3>Operators</h3>
+        <pre class="para">
+            Operators are used to perform operations on variables and values.
+
+In the example below, we use the + operator to add together two values:
+
+Example
+int myNum = 100 + 50;
+Although the + operator is often used to add together two values, like in the example above, it can also be used to add together a variable and a value, or a variable and another variable:
+
+Example
+int sum1 = 100 + 50;        // 150 (100 + 50)
+int sum2 = sum1 + 250;      // 400 (150 + 250)
+int sum3 = sum2 + sum2;     // 800 (400 + 400)
+C divides the operators into the following groups:
+
+Arithmetic operators
+Assignment operators
+Comparison operators
+Logical operators
+Bitwise operators
+Arithmetic Operators
+Arithmetic operators are used to perform common mathematical operations.
+
+Operator	Name	Description	Example	Try it
++	Addition	Adds together two values	x + y	
+-	Subtraction	Subtracts one value from another	x - y	
+*	Multiplication	Multiplies two values	x * y	
+/	Division	Divides one value by another	x / y	
+%	Modulus	Returns the division remainder	x % y	
+++	Increment	Increases the value of a variable by 1	++x	
+--	Decrement	Decreases the value of a variable by 1	--x	
+Assignment Operators
+Assignment operators are used to assign values to variables.
+
+In the example below, we use the assignment operator (=) to assign the value 10 to a variable called x:
+
+Example
+int x = 10;
+The addition assignment operator (+=) adds a value to a variable:
+
+Example
+int x = 10;
+x += 5;
+        </pre>
+    </div> 
+ </div>
+
+ 
+
+ <div id="CLoops">
+    <div class="main">
+        <h1 class ="Head">Loops</h1>
+        <h3>While Loop</h3>
+        <pre class="para">The while loop loops through a block of code as long as a specified condition is true:
+
+            Syntax
+            while (condition) {
+              // code block to be executed
+            }
+            In the example below, the code in the loop will run, over and over again, as long as a variable (i) is less than 5:
+            
+            Example
+            int i = 0;
+            
+            while (i < 5) {
+              printf("%d\n", i);
+              i++;
+            }
+            Note: Do not forget to increase the variable used in the condition (i++), otherwise the loop will never end!
+            
+            The Do/While Loop
+            The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+            
+            Syntax
+            do {
+              // code block to be executed
+            }
+            while (condition);
+            The example below uses a do/while loop. The loop will always be executed at least once, even if the condition is false, because the code block is executed before the condition is tested:
+            
+            Example
+            int i = 0;
+            
+            do {
+              printf("%d\n", i);
+              i++;
+            }
+            while (i < 5);
+            Do not forget to increase the variable used in the condition, otherwise the loop will never end!</pre>
+    </div>
+ </div>
+
+ <div id="CArray">
+    <div class="main">
+        <h1 class="Head">C Arrays</h1>
+        <h3>Arrays</h3>
+        <pre class="para">
+            Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
+
+To create an array, define the data type (like int) and specify the name of the array followed by square brackets [].
+
+To insert values to it, use a comma-separated list, inside curly braces:
+
+int myNumbers[] = {25, 50, 75, 100};
+We have now created a variable that holds an array of four integers.
+
+Access the Elements of an Array
+To access an array element, refer to its index number.
+
+Array indexes start with 0: [0] is the first element. [1] is the second element, etc.
+
+This statement accesses the value of the first element [0] in myNumbers:
+
+Example
+int myNumbers[] = {25, 50, 75, 100};
+printf("%d", myNumbers[0]);
+
+// Outputs 25
+Change an Array Element
+To change the value of a specific element, refer to the index number:
+
+Example
+myNumbers[0] = 33;
+Example
+int myNumbers[] = {25, 50, 75, 100};
+myNumbers[0] = 33;
+
+printf("%d", myNumbers[0]);
+
+// Now outputs 33 instead of 25
+Loop Through an Array
+You can loop through the array elements with the for loop.
+
+The following example outputs all elements in the myNumbers array:
+
+Example
+int myNumbers[] = {25, 50, 75, 100};
+int i;
+
+for (i = 0; i < 4; i++) {
+  printf("%d\n", myNumbers[i]);
+}
+Set Array Size
+Another common way to create arrays, is to specify the size of the array, and add elements later:
+
+Example
+// Declare an array of four integers:
+int myNumbers[4];
+
+// Add elements
+myNumbers[0] = 25;
+myNumbers[1] = 50;
+myNumbers[2] = 75;
+myNumbers[3] = 100;
+Using this method, you should know the size of the array, in order for the program to store enough memory.
+
+You are not able to change the size of the array after creation
+
+        </pre>
+    </div>
+ </div>
+
+ <div id="Cstrings">
+    <div class="main">
+        <h1 class="Head">C Strings</h1>
+        <h3>string</h3>
+        <pre class="para">Strings are used for storing text/characters.
+
+            For example, "Hello World" is a string of characters.
+            
+            Unlike many other programming languages, C does not have a String type to easily create string variables. Instead, you must use the char type and create an array of characters to make a string in C:
+            
+            char greetings[] = "Hello World!";
+            Note that you have to use double quotes ("").
+            
+            To output the string, you can use the printf() function together with the format specifier %s to tell C that we are now working with strings:
+            
+            Example
+            char greetings[] = "Hello World!";
+            printf("%s", greetings);
+            Access Strings
+            Since strings are actually arrays in C, you can access a string by referring to its index number inside square brackets [].
+            
+            This example prints the first character (0) in greetings:
+            
+            Example
+            char greetings[] = "Hello World!";
+            printf("%c", greetings[0]);
+            Note that we have to use the %c format specifier to print a single character.
+            
+            Modify Strings
+            To change the value of a specific character in a string, refer to the index number, and use single quotes:
+            
+            Example
+            char greetings[] = "Hello World!";
+            greetings[0] = 'J';
+            printf("%s", greetings);
+            // Outputs Jello World! instead of Hello World!
+            Another Way Of Creating Strings
+            In the examples above, we used a "string literal" to create a string variable. This is the easiest way to create a string in C.
+            
+            You should also note that you can create a string with a set of characters. This example will produce the same result as the example in the beginning of this page:
+            
+            Example
+            char greetings[] = {'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', '!', '\0'};
+            printf("%s", greetings);
+            Why do we include the \0 character at the end? This is known as the "null terminating character", and must be included when creating strings using this method. It tells C that this is the end of the string.
+            
+            Differences
+            The difference between the two ways of creating strings, is that the first method is easier to write, and you do not have to include the \0 character, as C will do it for you.
+            
+            You should note that the size of both arrays is the same: They both have 13 characters (space also counts as a character by the way), including the \0 character:
+            
+            Example
+            char greetings[] = {'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', '!', '\0'};
+            char greetings2[] = "Hello World!";
+            
+            printf("%lu\n", sizeof(greetings));   // Outputs 13
+            printf("%lu\n", sizeof(greetings2));  // Outputs 13</pre>
+        
+    </div>
+ </div>
+
+
+
+
+ 
+   </div>
+</body>
+</html> 
+
+
+
+
+
+
